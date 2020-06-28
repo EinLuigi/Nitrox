@@ -121,6 +121,7 @@ namespace NitroxClient.GameLogic
             NitroxId id = NitroxEntity.GetId(gameObject);
 
             if (amount < 0.95f) // Construction complete event handled by function below
+            //sometimes Buildings are not finished maybe bug is here
             {
                 ConstructionAmountChanged amountChanged = new ConstructionAmountChanged(id, amount);
                 packetSender.Send(amountChanged);
