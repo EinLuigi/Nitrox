@@ -150,7 +150,7 @@ namespace NitroxServer.GameLogic.Bases
 
             lock (completedBasePieceHistory)
             {
-                // Play back all completed base pieces first (other pieces have a dependency on these being done)
+                // Play back all completed base pieces first (other pieces have a dependency on these being done) Building is not 100% fixed but vastly improved. Building is not 100% fixed but vastly improved. 
                 basePieces = new List<BasePiece>(completedBasePieceHistory);
             }
 
